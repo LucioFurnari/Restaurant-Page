@@ -1,1 +1,1 @@
-console.log("Testing");
+(()=>{"use strict";document.querySelector("body").appendChild(function(){const e=document.createElement("div"),t=document.createElement("p");return t.textContent="Test",e.classList.add("main"),e.appendChild(t),e}())})();
