@@ -1,4 +1,4 @@
 import { Main } from "./components/Main";
+import "./styles/main.css"
 
-const  body = document.querySelector("body");
-body.appendChild(Main())
+Main();
