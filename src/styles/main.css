@@ -48,6 +48,12 @@ table {
 }
 
 /*------------------------------------------------------------------*/
+:root {
+	--navFontColor: rgb(240,240,240);
+	--navBackground: rgba(25,25,25,0.3);
+	--navButtonHover: rgba(255, 255, 255, 0.5);
+	--navButtonHoverColor: rgb(25,25,25);
+}
 
 body {
     box-sizing: border-box;
