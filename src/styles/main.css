@@ -50,15 +50,22 @@ table {
 /*------------------------------------------------------------------*/
 :root {
 	--navFontColor: rgb(240,240,240);
-	--navBackground: rgba(25,25,25,0.3);
+	--navBackground: rgba(25,25,25,0.5);
 	--navButtonHover: rgba(255, 255, 255, 0.5);
 	--navButtonHoverColor: rgb(25,25,25);
 }
-
+* {
+	box-sizing: border-box;
+}
 body {
-    box-sizing: border-box;
     background-image: url(../images/backgroundHome.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+	height: 100vh;
+}
+
+#content {
+	height: 100%;
+	width: 100%;
 }

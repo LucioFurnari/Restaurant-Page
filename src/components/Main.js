@@ -1,8 +1,9 @@
 import { headerComponent } from "./Header";
+import { homeComponent } from "./Home";
 
 
 export function Main() {
     const mainContainer = document.querySelector("#content");
     mainContainer.appendChild(headerComponent())
-    console.log(headerComponent());
+    mainContainer.appendChild(homeComponent())
 }
