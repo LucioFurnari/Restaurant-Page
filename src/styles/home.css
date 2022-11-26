@@ -1,0 +1,15 @@
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.home-card {
+    display: flex;
+    background-color: var(--navBackground);
+    width: 600px;
+    height: 600px;
+}
