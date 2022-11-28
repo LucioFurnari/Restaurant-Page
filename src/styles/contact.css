@@ -1,0 +1,23 @@
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--navBackground);
+    padding: 1rem;
+}
+
+.contact-card p{
+    color: white;
+    font-size: 2rem;
+}
+.contact-card img {
+    width: 420px;
+    height: auto;
+}
