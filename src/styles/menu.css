@@ -1,0 +1,30 @@
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: auto; 
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    margin: 5rem 0;
+    /* height: 1200px; */
+    gap: 2rem;
+
+}
+.menu-card {
+    padding: 1.2rem;
+    background-color: var(--navBackground);
+
+}
+.menu-card p{
+    color: var(--navFontColor);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.menu-card img {
+    height: auto;
+    width: 100%;
+}

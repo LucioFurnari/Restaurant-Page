@@ -7,9 +7,9 @@ function contactComponent() {
     contactCard.classList.add("contact-card");
 
     const contactNumber = document.createElement("p");
-    contactNumber.textContent = "2477134985";
+    contactNumber.textContent = "📞 2477134985";
     const contactDirection = document.createElement("p");
-    contactDirection.textContent = "False Direction 1234"
+    contactDirection.textContent = "📍 False Direction 1234"
     const contactMap = document.createElement("img");
     contactMap.src = "../src/images/map.png"
 
