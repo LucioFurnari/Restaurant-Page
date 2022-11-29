@@ -11,13 +11,17 @@
     flex-direction: column;
     background-color: var(--navBackground);
     padding: 1rem;
+    box-shadow: 1px 1px 10px var(--boxShadowColor);
+    border-radius: 0.5rem;
 }
 
 .contact-card p{
     color: white;
     font-size: 2rem;
+    font-family: 'Anek Devanagari', sans-serif;
+    padding: 1rem;
 }
 .contact-card img {
-    width: 420px;
-    height: auto;
+    width: 100%;
+    height: 420px;
 }

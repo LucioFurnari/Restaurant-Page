@@ -55,10 +55,12 @@ table {
 	--navButtonHoverColor: rgb(25,25,25);
 	
 	--boxShadowColor:rgb(30,30,30);
+	--borderColor:rgb(60, 60, 60);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@200;300;400;500;600;700&display=swap');
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -66,15 +68,19 @@ table {
 	/* outline: 1px solid red; */
 }
 body {
-    background-image: url(../images/backgroundHome.jpg);
-    background-size:cover;
+    background-image: url(../images/card-image.jpg);
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+	background-position:center;
 	height: 100vh;
+	width: 100vw;
+	/* overflow: hidden; */
 }
 
 #content {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	width: 100%;
 }

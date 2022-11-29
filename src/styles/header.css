@@ -5,6 +5,9 @@ nav {
 	display: flex;
 	justify-content: center;
 	background-color: var(--navBackground);
+	border-bottom: 2px solid var(--borderColor);
+	/* position: fixed;
+	width: 100%; */
 }
 
 nav ul {
@@ -15,7 +18,7 @@ nav ul {
 nav ul li button {
     cursor: pointer;
 	border: none;
-	padding: 1rem;
+	padding: 1.3rem;
 	font-size: 1.3rem;
 	font-weight: 500;
 	color: var(--navFontColor);
