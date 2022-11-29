@@ -1,10 +1,9 @@
 const Pizzas = [
-    {id: 1, name: "Margarita", ingredients: ["Mozzarella","Salsa","Albahaca","Tomate"],img: "../src/images/pizza_Margarita.jpg", price: 500 },
-    {id: 2, name:"Cuatro quesos", ingredients: ["Mozzarella","Queso azul","Parmesano","Provolone"],img: "../src/images/pizza_CuatroQuesos.jpg", price: 600},
-    {id: 3, name:"Jamon cocido", ingredients:["Mozzarella","Salsa","Jamon cocido"],img: "../src/images/pizza_JamonCocido.jpg", price: 800},
-    {id: 4, name:"Hawaiana", ingredients:["Mozzarella","Salsa","Jamon","Piña"],img: "../src/images/pizza_Hawaiana.jpg", price: 750},
-    {id: 5, name:"Champiniones y pepperoni", ingredients:["Mozzarella","Champiniones","Pepperoni","Tomate"],img: "../src/images/pizza_PeperoniChampinones.jpg", price: 650},
-    {id: 6, name:"Albahaca y cherry", ingredients:["Mozzarella","Albahaca","Tomate cherry"],img:"../src/images/pizza_AlbahacaCherry.jpg", price:550},
+    {id: 1, name: "Hamburger", ingredients: [],img: "../src/images/hamburger.jpg", price: 10 },
+    {id: 2, name:"BBQ Ribs", ingredients: [],img: "../src/images/Bbq_Ribs.jpg", price: 25},
+    {id: 3, name:"Caesar Salad", img:"../src/images/Caesar_Salad.jpg", price:10 },
+    {id: 4, name:"Steak", img:"../src/images/steak.jpg", price:20},
+    {id: 5, name:"Cheese Sandwich", img:"../src/images/cheese_sandwich.jpg", price:20},
 ];
 
 function menuComponent(){
@@ -25,7 +24,7 @@ function menuComponent(){
         ingredients.textContent = elem.ingredients;
 
         const price = document.createElement("p");
-        price.textContent = elem.price + " $";
+        price.textContent ="$ " + elem.price;
 
         const cardImage = document.createElement("img");
         cardImage.src = elem.img;
