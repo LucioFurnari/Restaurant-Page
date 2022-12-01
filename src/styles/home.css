@@ -36,3 +36,11 @@
     border-radius: 0.5rem;
     box-shadow: 1px 1px 10px var(--boxShadowColor);
 }
+
+/*----------------------- Media Query -----------------------*/
+
+@media (max-width: 750px) {
+    .home-card {
+        width: 350px;
+    }
+}

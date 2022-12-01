@@ -42,6 +42,6 @@
 
 @media (max-width: 750px) {
     .cards-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 300px;
     }
 }

@@ -22,7 +22,11 @@
     font-family:'Fjalla One', sans-serif;
     font-size: 2rem;
     font-family: 'Anek Devanagari', sans-serif;
-    padding: 1rem;
+}
+.text-div {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
 }
 .contact-card img {
     width: 2.5rem;
@@ -38,12 +42,15 @@
 
 @media (max-width: 750px) {
     .contact-card {
-        padding: 0.5rem;
+        padding: 1.5rem 1rem;
         flex-direction: column;
     }
     .contact-card iframe {
-        width: 340px;
+        width: 300px;
         height: 280px;
         padding: 0;
+    }
+    .text-div {
+        padding: 0.5rem 0;
     }
 }
