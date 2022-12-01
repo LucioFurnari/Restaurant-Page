@@ -16,12 +16,17 @@ mainContainer.appendChild(homeComponent())
 const homeBtn = document.querySelector(".home-button");
 const menuBtn = document.querySelector(".menu-button");
 const aboutBtn = document.querySelector(".about-button");
+homeBtn.classList.add("button-active");
 
-function tabbedBrowsing(component) {
+function tabbedBrowsing(component,target) {
+    homeBtn.classList.remove("button-active")
+    menuBtn.classList.remove("button-active")
+    aboutBtn.classList.remove("button-active")
+    target.classList.add("button-active")
     mainContainer.removeChild(mainContainer.children[1]);
     mainContainer.appendChild(component)
 }
 
-aboutBtn.addEventListener("click",()=> tabbedBrowsing(contactComponent()))
-homeBtn.addEventListener("click",() => tabbedBrowsing(homeComponent()))
-menuBtn.addEventListener("click",() => tabbedBrowsing(menuComponent()))
+aboutBtn.addEventListener("click",(event)=> tabbedBrowsing(contactComponent(),event.target))
+homeBtn.addEventListener("click",(event) => tabbedBrowsing(homeComponent(),event.target))
+menuBtn.addEventListener("click",(event) => tabbedBrowsing(menuComponent(),event.target))
