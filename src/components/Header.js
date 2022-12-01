@@ -1,10 +1,13 @@
 
 function headerComponent() {
     const navBar = document.createElement("nav");
+    const navTitle = document.createElement("h2");
     const navList = document.createElement("ul");
     const listHome = document.createElement("li");
     const listMenu = document.createElement("li");
     const listAbout = document.createElement("li");
+
+    navTitle.textContent = "Restaurant"
 
     const homeBtn = document.createElement("button");
     homeBtn.classList.add("home-button");
@@ -20,7 +23,7 @@ function headerComponent() {
     aboutBtn.classList.add("about-button");
     
     navList.append(listHome,listMenu,listAbout);
-    navBar.appendChild(navList)
+    navBar.append(navTitle,navList)
 
     return navBar;
 };

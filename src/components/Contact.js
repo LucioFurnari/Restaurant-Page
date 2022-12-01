@@ -16,6 +16,9 @@ function contactComponent() {
 
     contactDirectionMarker.src = "../src/images/map-marker.svg"
     contactDirection.textContent =  "False Direction 1234"
+
+    const textContainer = document.createElement("div");
+    textContainer.append(contactNumber,contactDirection)
     contactDirection.appendChild(contactDirectionMarker)
     const contactMap = document.createElement("iframe");
 
@@ -23,7 +26,7 @@ function contactComponent() {
     contactMap.setAttribute("allowfullscreen","")
     contactMap.setAttribute("loading","lazy");
     contactMap.setAttribute("referrerpolicy","no-referrer-when-downgrade")
-    contactCard.append(contactNumber,contactDirection,contactMap);
+    contactCard.append(textContainer,contactMap);
     contactContainer.appendChild(contactCard)
 
     return contactContainer
