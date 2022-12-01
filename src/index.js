@@ -2,10 +2,12 @@ import { Main } from "./components/Main";
 import { homeComponent } from "./components/Home";
 import { contactComponent } from "./components/Contact";
 import { headerComponent } from "./components/Header";
+import { menuComponent } from "./components/Menu";
 import "./styles/main.css"
 import "./styles/header.css"
 import "./styles/home.css"
 import "./styles/contact.css"
+import "./styles/menu.css"
 
 const mainContainer = document.querySelector("#content");
 mainContainer.appendChild(headerComponent())
@@ -22,3 +24,4 @@ function tabbedBrowsing(component) {
 
 aboutBtn.addEventListener("click",()=> tabbedBrowsing(contactComponent()))
 homeBtn.addEventListener("click",() => tabbedBrowsing(homeComponent()))
+menuBtn.addEventListener("click",() => tabbedBrowsing(menuComponent()))
