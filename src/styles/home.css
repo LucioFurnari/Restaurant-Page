@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--navBackground);
-    padding: 1rem;
+    padding: 2rem 0 ;
     box-shadow: 1px 1px 10px var(--boxShadowColor);
     border-radius: 0.5rem;
     width: 600px;
