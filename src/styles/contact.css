@@ -13,15 +13,22 @@
     padding: 1rem;
     box-shadow: 1px 1px 10px var(--boxShadowColor);
     border-radius: 0.5rem;
+    border: 1px solid var(--borderColor);
 }
 
 .contact-card p{
     color: white;
+    font-family:'Fjalla One', sans-serif;
     font-size: 2rem;
     font-family: 'Anek Devanagari', sans-serif;
     padding: 1rem;
 }
 .contact-card img {
-    width: 100%;
+    width: 2.5rem;
+    margin-left: 0.5rem;
+}
+.contact-card iframe {
+    width: 420px;
     height: 420px;
+    padding: 1rem;
 }

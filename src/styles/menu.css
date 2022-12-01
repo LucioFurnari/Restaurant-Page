@@ -12,7 +12,7 @@
     grid-template-columns: repeat(2,350px);
     margin: 5rem 0;
     gap: 2rem;
-
+    height: 100%;
 }
 .menu-card {
     display: flex;
@@ -21,15 +21,27 @@
     align-items: center;
     padding: 1.2rem;
     background-color: var(--navBackground);
-
+    box-shadow: 1px 1px 10px var(--boxShadowColor);
+    border: 1px solid var(--borderColor);
 }
 .menu-card p{
     color: var(--navFontColor);
     font-size: 1.5rem;
     text-align: center;
+    font-family:'Fjalla One', sans-serif;
+    margin-bottom: 0.5rem;
 }
 .menu-card img {
     margin-top: 1rem;
     height: auto;
     width: 100%;
+    border-radius: 0.5rem;
+}
+
+/*----------------------- Media Query -----------------------*/
+
+@media (max-width: 750px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
 }
