@@ -8,7 +8,7 @@ function homeComponent(){
 
     const cardUpperTitle = document.createElement("p");
     const cardTitle = document.createElement("h1")
-  
+
     cardUpperTitle.textContent = "WELCOME TO";
     cardTitle.textContent = "ELISEO RESTAURANT"
     card.append(cardUpperTitle, cardTitle);

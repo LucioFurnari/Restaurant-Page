@@ -1,3 +1,12 @@
+const hours = [
+    "Tuesday: 12:00 - 22:00",
+    "Wednesday: 12:00 - 22:00",
+    "Thursday: 12:00 - 22:00",
+    "Friday: 12:00 - 23:30",
+    "Saturday: 12:00 - 23:30",
+    "Sunday: 12:00 - 23:30"
+]
+
 
 function contactComponent() {
     const contactContainer = document.createElement("div");
@@ -17,6 +26,17 @@ function contactComponent() {
     contactDirectionMarker.src = "../src/images/map-marker.svg"
     contactDirection.textContent =  "False Direction 1234"
 
+    const hoursList = document.createElement("ul");
+    const hoursTitle = document.createElement("h2");
+    hoursTitle.textContent = "Hours:";
+    hoursList.appendChild(hoursTitle)
+    hoursList.classList.add("hours-list")
+    hours.forEach(elem => {
+        const list = document.createElement("li")
+        list.textContent = elem;
+        hoursList.appendChild(list);
+    })
+
     const contactTextContainer = document.createElement("div");
     const textDivOne = document.createElement("div");
     const textDivTwo = document.createElement("div");
@@ -25,7 +45,7 @@ function contactComponent() {
 
     textDivOne.append(contactPhoneImg,contactNumber);
     textDivTwo.append(contactDirectionMarker,contactDirection);
-    contactTextContainer.append(textDivOne,textDivTwo)
+    contactTextContainer.append(hoursList,textDivOne,textDivTwo)
     
     const contactMap = document.createElement("iframe");
 

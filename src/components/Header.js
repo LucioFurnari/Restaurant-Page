@@ -18,9 +18,9 @@ function headerComponent() {
     menuBtn.textContent = "Menu";
     listMenu.appendChild(menuBtn);
     const aboutBtn = document.createElement("button");
-    aboutBtn.textContent = "About";
+    aboutBtn.textContent = "Contact";
     listAbout.appendChild(aboutBtn);
-    aboutBtn.classList.add("about-button");
+    aboutBtn.classList.add("contact-button");
     
     navList.append(listHome,listMenu,listAbout);
     navBar.append(navTitle,navList)
